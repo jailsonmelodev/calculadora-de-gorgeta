@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de gorgeta</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1 class="title">Calcular gorgeta</h1>
+        <div>
+            <form class="tipsForm">
+                <input type="number" name="bill" id="bill" placeholder="100" class="formInput" required>
+                <p>Como foi seu serviço?</p>
+                <select name="serviceQuality" id="serviceQuality" class="formSelect" required>
+                    <option value="" disabled selected>-- Escolha uma opção</option>
+                    <option value="0.3">30% - Incrivel</option>
+                    <option value="0.2">20% - Bom</option>
+                    <option value="0.15">15% - Aceitavel</option>
+                    <option value="0.1">10% - Ruim</option>
+                    <option value="0.05">05% - Péssimo</option>
+                </select>
+                <p>Quantas pessoas a mesa?</p>
+
+                <input type="number" value="1" name="people" id="people" class="formInput" required> pessoa(s).
+
+                <input type="submit" value="Calcular" class="formSubmit">
+            </form>
+        </div>
+        <div id="totalTip">
+            Gorgeta total:
+            R$:<span id="tip">0.00</span>
+            <span id="each">para cada um!</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
